@@ -70,7 +70,7 @@ body {
   margin-top: 200px;
   text-align: center;
 }
-.content h2 {
+.content h1 {
   font-weight: 900;
   font-size: 24px;
   color: var(--dark-blue);
@@ -102,9 +102,10 @@ body {
 .price div {
   padding-right: 60px;
 }
-.price div h4 {
+.price div h2 {
   color: var(--dark-blue);
   font-weight: 900;
+  font-size: 16px;
   margin-bottom: 4px;
 }
 .price div p {
