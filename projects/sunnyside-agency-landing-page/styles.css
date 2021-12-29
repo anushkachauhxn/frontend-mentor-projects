@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+:root {
+  /* Primary */
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  /* Graphic Design Text */
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  /* Photography Text */
+  --dark-blue: hsl(198, 62%, 26%);
+  /* Footer */
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+
+  /* Neutral */
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+}
+
+/* ------------------------ HERO CONTAINER ------------------------ */
+.hero-container {
+  height: 100vh;
+  width: 100%;
+
+  color: var(--white);
+  background: url("./assets/desktop/image-header.jpg") no-repeat center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Navbar */
+.hero-container nav {
+  width: 100%;
+  padding: 44px 46px 0px 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-container nav ul {
+  list-style: none;
+  font-size: 18px;
+
+  display: flex;
+  flex-direction: row;
+  column-gap: 48px;
+}
+.hero-container nav ul a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.hero-container nav .nav-icon {
+  display: none;
+}
+
+/* Contact Button */
+.hero-container nav ul .contact-btn a {
+  background: var(--white);
+  border-radius: 26px;
+  padding: 16px 24px;
+  margin-top: -12px;
+
+  color: var(--very-dark-desaturated-blue);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.hero-container nav ul .contact-btn:hover a {
+  color: var(--white);
+  background: hsla(0, 0%, 100%, 0.329);
+}
+
+/* Heading Text */
+.hero-container h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 54px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+/* Down Arrow */
+.arrow-down:hover {
+  transform: translateY(-12px);
+  transition: transform 0.2s;
+}
+
+/* ------------------------ MAIN CONTAINER ------------------------ */
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+}
+
+/* 3 ROWS OF CONTENT : 2 BOXES EACH */
+.mc {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 0px;
+}
+.mc div {
+  width: 50%;
+}
+
+/* -- IMAGE BOXES -- */
+/* Item 1, 3, 5 and 6 */
+.mc-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* -- TEXT BOXES -- */
+/* Item 2 and 4 */
+.mc-item2,
+.mc-item4 {
+  padding: 164px 0 0 162px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+/* TEXT BOXES: Heading */
+.mc-item2 h3,
+.mc-item4 h3 {
+  padding-right: 142px;
+  color: var(--very-dark-desaturated-blue);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 38px;
+}
+/* TEXT BOXES: Text */
+.mc-item2 p,
+.mc-item4 p {
+  padding-right: 110px;
+  color: var(--dark-grayish-blue);
+  font-size: 18px;
+  line-height: 28px;
+}
+/* TEXT BOXES: 'Learn More' Link */
+.mc-item2 a,
+.mc-item4 a {
+  text-decoration: none;
+  color: var(--very-dark-desaturated-blue);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/* TEXT BOXES: 'Learn More' Link Underline */
+.mc-item2 a::before,
+.mc-item4 a::before {
+  content: "";
+  display: block;
+  margin-left: -4.5px;
+  margin-bottom: -18px;
+  width: 124px;
+  border-radius: 4px;
+}
+.mc-item2 a::before {
+  border-bottom: 8px solid hsla(51, 100%, 49%, 0.4);
+}
+.mc-item2 a:hover::before {
+  border-bottom: 8px solid hsla(51, 100%, 49%, 1);
+}
+.mc-item4 a::before {
+  border-bottom: 8px solid hsl(7, 99%, 70%, 0.4);
+}
+.mc-item4 a:hover::before {
+  border-bottom: 8px solid hsl(7, 99%, 70%, 1);
+}
+
+/* -- TEXT + IMG BOXES -- */
+/* Item 5 and 6 */
+.mc-item5,
+.mc-item6 {
+  position: relative;
+}
+.mc-item5 div,
+.mc-item6 div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  height: 100%;
+  width: 100%;
+  padding: 62px 190px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.mc-item5 div {
+  color: var(--dark-desaturated-cyan);
+}
+.mc-item6 div {
+  color: var(--dark-blue);
+}
+
+.mc-item5 h3,
+.mc-item6 h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.mc-item5 p,
+.mc-item6 p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* ------------------------ TESTIMONIALS CONTAINER ------------------------ */
+.testimonials-container {
+  width: 100%;
+  padding: 164px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 84px;
+  justify-content: center;
+  align-items: center;
+}
+/* Heading */
+.testimonials-container h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: var(--grayish-blue);
+  font-size: 20px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+/* Row containing all 3 Items */
+.tc {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 42px;
+}
+
+.tc-item {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  row-gap: 65px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tc-item img {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+}
+
+.tc-item p {
+  color: var(--dark-grayish-blue);
+  font-size: 18px;
+  line-height: 28px;
+}
+.tc-item h4 {
+  color: var(--very-dark-desaturated-blue);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+.tc-item h5 {
+  padding-top: 12px;
+  color: var(--grayish-blue);
+  font-size: 14px;
+}
+
+/* ------------------------ GALLERY CONTAINER ------------------------ */
+.gallery-container {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 0;
+}
+.gallery-container img {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------------------------ FOOTER CONTAINER ------------------------ */
+.footer-container {
+  width: 100%;
+  padding: 70px;
+  background: #90d4c5;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 58px;
+}
+.footer-container ul a {
+  text-decoration: none;
+  color: var(--dark-moderate-cyan);
+}
+.footer-container ul a:hover {
+  color: var(--white);
+}
+
+.footer-container ul.socials {
+  padding-top: 40px;
+  column-gap: 25px;
+}
+
+.mobile {
+  display: none;
+}
+
+/* ------------------------------------------------ RESPONSIVENESS ------------------------------------------------ */
+@media (max-width: 346px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  /* ------------------------ HERO CONTAINER ------------------------ */
+  .hero-container {
+    background: url("./assets/mobile/image-header.jpg") no-repeat center;
+    background-size: cover;
+    row-gap: 80px;
+  }
+  /* Heading Text */
+  .hero-container h1 {
+    font-size: 36px;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  /* NAVBAR */
+  .hero-container nav {
+    padding: 30px 20px 36px 20px;
+    position: relative;
+  }
+  .hero-container nav .logo {
+    height: 22px;
+  }
+  .hero-container nav .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .hero-container nav .nav-icon {
+    display: block;
+  }
+
+  /* Nav Links Menu */
+  .hero-container nav ul.nav-links {
+    position: absolute;
+    left: 20px;
+    top: 106px;
+
+    width: calc(100% - 40px);
+    padding: 40px;
+
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+  }
+  .hero-container nav ul.nav-links a {
+    color: var(--dark-grayish-blue);
+  }
+  /* Up Arrow on the Menu*/
+  .hero-container nav ul.nav-links::after {
+    content: "";
+    position: absolute;
+    left: 281.5px;
+    top: -24px;
+    width: 0;
+    height: 0;
+    border-left: 24px solid transparent;
+    border-bottom: 24px solid #fff;
+  }
+  /* Contact Button */
+  .hero-container nav ul.nav-links .contact-btn a {
+    background: var(--yellow);
+    color: var(--very-dark-desaturated-blue);
+  }
+  .hero-container nav ul.nav-links .contact-btn {
+    padding-top: 10px;
+  }
+
+  /* NAV MENU TOGGLE */
+  .hero-container nav ul.nav-links {
+    display: none;
+  }
+  .hero-container nav ul.nav-links.active {
+    display: flex;
+  }
+
+  /* ------------------------ MAIN CONTAINER ------------------------ */
+  /* 6 ROWS OF CONTENT : 1 BOX EACH */
+  .mc {
+    flex-direction: column;
+    row-gap: 0;
+  }
+  .mc1 {
+    flex-direction: column-reverse; /* Image Box before Text Box */
+  }
+  .mc div {
+    width: 100%;
+  }
+
+  /* -- TEXT BOXES: Item 2 and 4 -- */
+  .mc-item2,
+  .mc-item4 {
+    padding: 55px 32px;
+    row-gap: 32px;
+    align-items: center;
+    text-align: center;
+  }
+  .mc-item2 h3,
+  .mc-item4 h3 {
+    padding: 0;
+    font-size: 26px;
+  }
+  .mc-item2 p,
+  .mc-item4 p {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  /* -- TEXT + IMG BOXES: Item 5 and 6 -- */
+  .mc-item5 div,
+  .mc-item6 div {
+    padding: 60px 20px;
+    row-gap: 18px;
+  }
+  .mc-item5 h3,
+  .mc-item6 h3 {
+    font-size: 24px;
+  }
+  .mc-item5 p,
+  .mc-item6 p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* ------------------------ TESTIMONIALS CONTAINER ------------------------ */
+  .testimonials-container {
+    padding: 60px 28px 82px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+  /* Heading */
+  .testimonials-container h2 {
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+  /* Column containing all 3 Items */
+  .tc {
+    flex-direction: column;
+    row-gap: 60px;
+  }
+
+  .tc-item {
+    width: 100%;
+    row-gap: 26px;
+  }
+
+  .tc-item img {
+    height: 64px;
+    width: 64px;
+  }
+  .tc-item p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .tc-item h4 {
+    font-size: 16px;
+  }
+  .tc-item h5 {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  /* ------------------------ GALLERY CONTAINER ------------------------ */
+  .gallery-container {
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ------------------------ FOOTER CONTAINER ------------------------ */
+  .footer-container ul {
+    column-gap: 50px;
+  }
+}
