@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+:root {
+  /* Primary */
+  --linear-gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  /* Neutral */
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+
+  background-color: var(--very-light-grayish-blue);
+  background-image: url("./assets/bg-top.svg"), url("./assets/bg-bottom.svg");
+  background-position: right top, left bottom;
+  background-repeat: no-repeat, no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.annually {
+  display: block;
+}
+.monthly {
+  display: none;
+}
+
+/* --- HEADER --- */
+header h1 {
+  font-size: 34px;
+  color: var(--grayish-blue);
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+/* TOGGLE */
+header .toggle {
+  display: flex;
+  align-items: center;
+  color: var(--light-grayish-blue);
+}
+header .toggle .switch {
+  display: inline-block;
+  width: 56px;
+  height: 32px;
+  margin: 0 24px;
+  position: relative;
+}
+.toggle .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* Slider */
+.toggle .switch .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 32px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.toggle .switch .slider:before {
+  content: "";
+  height: 24px;
+  width: 24px;
+
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.toggle .switch input:checked + .slider:before {
+  transform: translateX(24px);
+}
+.toggle .switch:hover {
+  opacity: 0.5;
+}
+
+/* --- MAIN --- */
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main .card {
+  height: 454px;
+  width: 350px;
+  padding: 36px 31px 32px 31px;
+
+  background: #fff;
+  box-shadow: 0 8px 32px -4px hsla(236, 72%, 79%, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .card1 {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+main .card3 {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Styling the contents of the cards */
+main .card h2 {
+  font-size: 18px;
+  color: var(--grayish-blue);
+}
+
+main .card .price {
+  display: flex;
+  align-items: center;
+}
+main .card .price h3 {
+  font-size: 40px;
+  color: var(--dark-grayish-blue);
+}
+main .card .price h1 {
+  font-size: 72px;
+  color: var(--dark-grayish-blue);
+  padding: 24px 10px;
+}
+
+main .card p {
+  height: 56px;
+  width: 100%;
+  font-size: 15px;
+  color: var(--grayish-blue);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.25px solid var(--light-grayish-blue);
+  border-bottom: 0.25px solid var(--light-grayish-blue);
+}
+main .card p:nth-child(4) {
+  border: none;
+}
+
+main .card button {
+  height: 54px;
+  width: 100%;
+  margin-top: 32px;
+
+  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 5px;
+  letter-spacing: 2.4px;
+  border: none;
+  outline: none;
+  color: #fff;
+
+  transition: 0.4s;
+  cursor: pointer;
+}
+main .card button:hover {
+  background: transparent;
+  border: 1px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+}
+
+/* MIDDLE CARD */
+main .card2 {
+  height: 500px;
+  padding: 58px 31px 54px 31px;
+  background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 10px;
+}
+main .card2 h2 {
+  color: #fff;
+}
+main .card2 .price h3 {
+  color: #fff;
+}
+main .card2 .price h1 {
+  color: #fff;
+  padding: 28px 10px;
+}
+main .card2 p {
+  color: #fff;
+  border-top: 0.25px solid #fff;
+  border-bottom: 0.25px solid #fff;
+}
+main .card2 button {
+  background: #fff;
+  color: hsl(237, 63%, 64%);
+}
+main .card2 button:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* --------  RESPONSIVENESS - MOBILE VIEW  -------- */
+@media (max-width: 376px) {
+  body {
+    background: var(--very-light-grayish-blue);
+    background-image: url("./assets/bg-top.svg");
+    background-repeat: no-repeat;
+    background-position-x: 198px;
+    background-position-y: -44px;
+  }
+
+  /* --- HEADER --- */
+  header {
+    padding-top: 56px;
+  }
+
+  /* --- MAIN --- */
+  main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    padding-bottom: 72px;
+  }
+
+  main .card {
+    width: 325px;
+    border-radius: 10px;
+  }
+}
