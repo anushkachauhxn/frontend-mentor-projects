@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+:root {
+  /* Primary */
+  --moderate-violet: 263 55% 52%;
+  --very-dark-grayish-blue: 217 19% 35%;
+  --very-dark-blackish-blue: 219 29% 14%;
+  --white: 0 0% 100%;
+  /* Neutral */
+  --light-gray: 0 0% 81%;
+  --light-grayish-blue: 210 46% 95%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(var(--light-grayish-blue));
+}
+
+.container {
+  max-width: 100%;
+  margin: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 254px);
+  grid-gap: 24px 30px;
+  grid-template-areas:
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+}
+
+.box {
+  padding: 24px 34px 30px 30px;
+  border-radius: 8px;
+  box-shadow: 40px 60px 48px -48px hsl(var(--very-dark-grayish-blue) / 0.25);
+}
+
+/* Placing the boxes in the grid container */
+.box1 {
+  background: hsl(var(--moderate-violet))
+    url("./assets/bg-pattern-quotation.svg") no-repeat 86% 0%;
+  grid-area: daniel;
+}
+.box2 {
+  background: hsl(var(--very-dark-grayish-blue));
+  grid-area: jonathan;
+}
+.box3 {
+  background: hsl(var(--white));
+  grid-area: jeanette;
+}
+.box4 {
+  background: hsl(var(--very-dark-blackish-blue));
+  grid-area: patrick;
+}
+.box5 {
+  background: hsl(var(--white));
+  grid-area: kira;
+}
+
+/* --------- COLORS --------- */
+/* Coloured Boxes: 1, 2, 5 */
+.box1 h1,
+.box2 h1,
+.box4 h1 {
+  color: hsl(var(--white));
+}
+.box1 p,
+.box2 p,
+.box4 p {
+  color: hsl(var(--white) / 0.7);
+}
+.box1 .profile h2,
+.box2 .profile h2,
+.box4 .profile h2 {
+  color: hsl(var(--white));
+}
+.box1 .profile h3,
+.box2 .profile h3,
+.box4 .profile h3 {
+  color: hsl(var(--white) / 0.5);
+}
+
+/* White Boxes: 3, 4 */
+.box3 h1,
+.box5 h1 {
+  color: hsl(var(--very-dark-grayish-blue));
+}
+.box3 p,
+.box5 p {
+  color: hsl(var(--very-dark-grayish-blue) / 0.7);
+}
+.box3 .profile h2,
+.box5 .profile h2 {
+  color: hsl(var(--very-dark-grayish-blue));
+}
+.box3 .profile h3,
+.box5 .profile h3 {
+  color: hsl(var(--very-dark-grayish-blue) / 0.5);
+}
+
+/* Styling the contents of the boxes */
+.box h1 {
+  font-size: 20px;
+  padding: 18px 0;
+}
+.box p {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.box .profile {
+  display: flex;
+  column-gap: 16px;
+}
+.box .profile img {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+}
+.box .profile h2 {
+  font-size: 13px;
+  line-height: 16px;
+}
+.box .profile h3 {
+  font-size: 12px;
+}
+
+/* Image Oultines for two boxes */
+.box1 .profile img,
+.box4 .profile img {
+  /* border: 2.5px solid hsl(var(--moderate-violet) / 0.7); */
+  border: 2.5px solid #9773d1;
+}
+
+/* ----------------- RESPONSIVENESS - MOBILE VIEW ----------------- */
+@media (max-width: 376px) {
+  .container {
+    max-width: 100%;
+    margin: 71px 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+}
