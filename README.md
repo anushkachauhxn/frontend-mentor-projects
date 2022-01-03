@@ -10,55 +10,66 @@ These are my solutions to the challenges I've completed on [Frontend Mentor](htt
 
 ### 1. Order Summary Component
 
-- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/projects/order-summary-component)
-- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/order-summary-component/index.html)
+- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/1-order-summary-component)
+- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/1-order-summary-component/)
 
-<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/order-summary-component">
-  <img width="750px" src="./projects/order-summary-component/assets/screenshot.png">
+<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/1-order-summary-component">
+  <img width="750px" src="./projects/1-order-summary-component/assets/screenshot.png">
 </a>
 
 <br><br>
 
 ### 2. FAQ Accordion Card
 
-- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/projects/faq-accordion-card)
-- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/faq-accordion-card/index.html)
+- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/2-faq-accordion-card)
+- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/2-faq-accordion-card/)
 
-<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/faq-accordion-card">
-  <img width="750px" src="./projects/faq-accordion-card/assets/screenshot.png">
+<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/2-faq-accordion-card">
+  <img width="750px" src="./projects/2-faq-accordion-card/assets/screenshot.png">
 </a>
 
 <br><br>
 
 ### 3. Sunnyside Agency Landing Page
 
-- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/projects/sunnyside-agency-landing-page)
-- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/sunnyside-agency-landing-page/index.html)
+- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/3-sunnyside-agency-landing-page)
+- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/3-sunnyside-agency-landing-page/)
 
-<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/sunnyside-agency-landing-page">
-  <img width="750px" src="./projects/sunnyside-agency-landing-page/assets/screenshot.png">
+<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/3-sunnyside-agency-landing-page">
+  <img width="750px" src="./projects/3-sunnyside-agency-landing-page/assets/screenshot.png">
 </a>
 
 <br><br>
 
 ### 4. Pricing Component with Toggle Master
 
-- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/projects/pricing-component-with-toggle-master)
-- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/pricing-component-with-toggle-master/index.html)
+- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/4-pricing-component-with-toggle-master)
+- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/4-pricing-component-with-toggle-master/)
 
-<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/pricing-component-with-toggle-master">
-  <img width="750px" src="./projects/pricing-component-with-toggle-master/assets/screenshot.png">
+<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/4-pricing-component-with-toggle-master">
+  <img width="750px" src="./projects/4-pricing-component-with-toggle-master/assets/screenshot.png">
 </a>
 
 <br><br>
 
 ### 5. Testimonials Grid Section
 
-- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/projects/testimonials-grid-section)
-- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/testimonials-grid-section/index.html)
+- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/5-testimonials-grid-section)
+- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/5-testimonials-grid-section/)
 
-<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/testimonials-grid-section">
-  <img width="750px" src="./projects/testimonials-grid-section/assets/screenshot.png">
+<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/5-testimonials-grid-section">
+  <img width="750px" src="./projects/5-testimonials-grid-section/assets/screenshot.png">
+</a>
+
+<br><br>
+
+### 6. Interactive Pricing Component
+
+- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/6-interactive-pricing-component)
+- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/6-interactive-pricing-component/)
+
+<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/6-interactive-pricing-component">
+  <img width="750px" src="./projects/6-interactive-pricing-component/assets/screenshot.png">
 </a>
 
 <br><br>

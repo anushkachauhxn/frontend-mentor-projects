@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Interactive Pricing Component</title>
+        <meta name="description" content="Interactive Pricing Component | Frontend Mentor">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Simple, traffic-based pricing</h1>
+            <p>Sign-up for our 30-day trial. No credit card required.</p>
+        </header>
+        <main>
+            <section class="pages-container">
+                <p id="pages"></p>
+                <p>PAGEVIEWS</p>
+            </section>
+
+            <section class="price-container">
+                <h2 id="price"></h2>
+                <p>/ month</p>
+            </section>
+            
+            <section class="slider-container">
+                <input id="rangeSlider" class="range-slider" type="range" min="0" max="4" value="2" step="1">
+                <span id="rangeSliderBg" class="range-slider-bg"></span>
+                <span id="rangeSliderProgress" class="range-slider-progress"></span>
+            </section>
+            
+            <section class="toggle-container">
+                Monthly Billing
+                <label class="toggle-switch">
+                    <input id="toggleSwitch" type="checkbox">
+                    <span class="toggle-slider"></span>
+                </label>
+                Yearly Billing
+            </section>
+
+            <section class="cta-container">
+                <ul>
+                    <li>
+                        <img src="./assets/icon-check.svg" alt="">
+                        Unlimited websites
+                    </li>
+                    <li>
+                        <img src="./assets/icon-check.svg" alt="">
+                        100% data ownership
+                    </li>
+                    <li>
+                        <img src="./assets/icon-check.svg" alt="">
+                        Email reports
+                    </li>
+                </ul>
+                <button>Start my trial</button>
+            </section>
+        </main>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
