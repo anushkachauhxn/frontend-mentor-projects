@@ -315,6 +315,13 @@ input:checked + .toggle-slider:before {
   color: var(--white);
 }
 
+/* ----------------- RESPONSIVENESS - LARGE DESKTOP VIEW ----------------- */
+@media (min-width: 1440px) {
+  body {
+    background-position: top 12.5% left 50%, top -12% left 0%;
+  }
+}
+
 /* ----------------- RESPONSIVENESS - MOBILE VIEW ----------------- */
 @media (max-width: 376px) {
   body {
