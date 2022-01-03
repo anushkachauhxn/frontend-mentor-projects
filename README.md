@@ -74,6 +74,17 @@ These are my solutions to the challenges I've completed on [Frontend Mentor](htt
 
 <br><br>
 
+### 7. Fylo Data Storage Component
+
+- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/7-fylo-data-storage-component)
+- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/7-fylo-data-storage-component/)
+
+<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/7-fylo-data-storage-component">
+  <img width="750px" src="./projects/7-fylo-data-storage-component/assets/screenshot.png">
+</a>
+
+<br><br>
+
 ## ⭐ Author
 
 - <img align="left" width="28px" src="https://img.icons8.com/fluency/48/000000/github.png"/> 

@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  /* Primary */
+  --gradient: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  /* Neutral */
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--very-dark-blue) no-repeat bottom/100%
+    url("./assets/bg-desktop.png");
+}
+
+main {
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* ---------- CONTAINER 1 ---------- */
+main .container-1 {
+  padding: 40px 133px 40px 41px;
+  background: var(--dark-blue);
+  border-radius: 10px 100px 10px 10px;
+}
+
+.container-1 .icons {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+}
+.container-1 .icons .icon {
+  height: 48px;
+  width: 48px;
+  background: var(--very-dark-blue);
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- CONTAINER 2 ---------- */
+main .container-2 {
+  padding: 42px 38px;
+  background: var(--dark-blue);
+  border-radius: 10px;
+  position: relative;
+}
+/* Data Text */
+.container-2 .data-text {
+  color: var(--pale-blue);
+  font-size: 14px;
+  font-weight: 400;
+}
+.container-2 .data-text span {
+  font-weight: 700;
+}
+/* Data Bar */
+.container-2 .data-bar {
+  margin-top: 15px;
+  width: 460px;
+  height: 20px;
+  background: hsl(230, 55%, 18%);
+  border-radius: 20px;
+  position: relative;
+}
+.container-2 .data-bar::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  width: 75%;
+  height: 14px;
+  background: var(--gradient);
+  border-radius: 14px;
+}
+.container-2 .data-bar::after {
+  content: "";
+  position: absolute;
+  top: calc(3px + 1.225px);
+  left: calc(3px + 75% - (11px + 2px));
+
+  width: 11px;
+  height: 11px;
+  background: #fff;
+  border-radius: 50%;
+}
+/* Data Tags */
+.container-2 .data-tags {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  color: var(--pale-blue);
+  font-size: 12px;
+  font-weight: 700;
+}
+/* Dialog Box */
+.container-2 .dialog-box {
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  right: 38px;
+  top: -42px;
+
+  padding: 12px 22px 12px 26px;
+  background: #fff;
+  border-radius: 10px 10px 0 10px;
+}
+.container-2 .dialog-box p {
+  display: flex;
+  align-items: center;
+
+  color: var(--grayish-blue);
+  font-size: 14px;
+  font-weight: 700;
+}
+.container-2 .dialog-box span {
+  margin-right: 10px;
+  color: var(--very-dark-blue);
+  font-size: 40px;
+  font-weight: 700;
+}
+.container-2 .dialog-box::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -22px;
+
+  width: 0;
+  height: 0;
+  border-left: 22px solid transparent;
+  border-top: 22.5px solid #fff;
+}
+
+/* ---------------------------------------- RESPONSIVENESS ---------------------------------------- */
+/* LARGE DESKTOP VIEW */
+@media (min-width: 1440px) {
+  body {
+    background: var(--very-dark-blue) no-repeat url("./assets/bg-desktop.png");
+    background-size: 100%;
+    background-position: left 0 bottom -22%;
+  }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 376px) {
+  body {
+    background: var(--very-dark-blue) no-repeat bottom/100%
+      url("./assets/bg-mobile.png");
+  }
+
+  main {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  /* ---------- CONTAINER 1 ---------- */
+  main .container-1 {
+    padding: 40px 108px 40px 41px;
+  }
+
+  /* ---------- CONTAINER 2 ---------- */
+  main .container-2 {
+    padding: 32px 32px 52px 32px;
+    position: relative;
+  }
+  .container-2 .data-text {
+    text-align: center;
+  }
+  .container-2 .data-bar {
+    width: 262px;
+  }
+  .container-2 .dialog-box {
+    top: 78%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+  }
+  .container-2 .dialog-box::after {
+    display: none;
+  }
+}
