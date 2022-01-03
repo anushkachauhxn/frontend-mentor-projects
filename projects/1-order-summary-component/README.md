@@ -30,8 +30,8 @@ This is a solution to the [Order Summary Card Challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/projects/order-summary-component)
-- Live Site URL: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/order-summary-component/index.html)
+- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/1-order-summary-component)
+- Live Site URL: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/1-order-summary-component/)
 
 ## 💡 My process
 

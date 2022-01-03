@@ -31,8 +31,8 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ### Links
 
-- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/projects/interactive-pricing-component)
-- Live Site URL: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/interactive-pricing-component/index.html)
+- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/6-interactive-pricing-component)
+- Live Site URL: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/6-interactive-pricing-component/)
 
 ## 💡 My process
 

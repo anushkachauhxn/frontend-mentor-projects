@@ -33,8 +33,8 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
 
 ### Links
 
-- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/projects/pricing-component-with-toggle-master)
-- Live Site URL: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/pricing-component-with-toggle-master/index.html)
+- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/4-pricing-component-with-toggle-master)
+- Live Site URL: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/4-pricing-component-with-toggle-master/)
 
 ## 💡 My process
 

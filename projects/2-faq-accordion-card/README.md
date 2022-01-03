@@ -34,8 +34,8 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/projects/faq-accordion-card)
-- Live Site URL: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/faq-accordion-card/index.html)
+- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/2-faq-accordion-card)
+- Live Site URL: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/2-faq-accordion-card/)
 
 ## 💡 My process
 

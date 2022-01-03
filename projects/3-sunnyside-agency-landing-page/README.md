@@ -31,8 +31,8 @@ This is a solution to the [Sunnyside Agency Landing Page Challenge on Frontend M
 
 ### Links
 
-- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/projects/sunnyside-agency-landing-page)
-- Live Site URL: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/sunnyside-agency-landing-page/index.html)
+- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/3-sunnyside-agency-landing-page)
+- Live Site URL: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/3-sunnyside-agency-landing-page/)
 
 ## 💡 My process
 
