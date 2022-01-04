@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>IP Address Tracker</title>
+        <meta name="description" content="IP Address Tracker | Frontend Mentor">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+        
+        <!-- Include Leaflet files -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        
+        <!-- My Stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>IP Address Tracker</h1>
+            <div class="search-bar">
+                <input id="searchBar" type="text" placeholder="Search for any IP address or domain">
+                <button type="submit"><img src="./assets/icon-arrow.svg" alt=""></button>
+            </div>
+        </header>
+        <main>
+            <div class="map" id="map"></div>
+            <div class="result-banner">
+                <div class="ip-address">
+                    <h2>IP Address</h2>
+                    <p></p>
+                </div>
+                <div class="location">
+                    <h2>Location</h2>
+                    <p></p>
+                </div>
+                <div class="timezone">
+                    <h2>Timezone</h2>
+                    <p></p>
+                </div>
+                <div class="isp">
+                    <h2>ISP</h2>
+                    <p></p>
+                </div>                
+            </div>
+        </main>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
