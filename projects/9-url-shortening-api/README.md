@@ -20,8 +20,6 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 - Your challenge is to build out this landing page, integrate with the [shrtcode API](https://app.shrtco.de/) and get it looking as close to the design as possible.
 
-<br>
-
 - Your users should be able to:
   - View the optimal layout for the site depending on their device's screen size
   - Shorten any valid URL
@@ -30,22 +28,14 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
   - Receive an error message when the `form` is submitted if:
     - The `input` field is empty
 
-<br>
-
 ### Additional features I added:
 
 - A loader shows up in submit button while API is fetched.
-  <img src="./assets/screenshot-2.png">
-
+  - <img src="./assets/screenshot-2.png">
 - Error Function for API errors
-
   - An alert shows up with 'Something went wrong' message.
-
 - The user can submit their URL using the _Enter_ key if they don't want to click the shorten button.
-
 - After the user has clicked the copy button, it changes to a dark colour with the words _Copied_. It changes back to the original state after 5 seconds, so that the user knows they can copy the URL again.
-
-<br>
 
 ### Screenshot
 
@@ -53,10 +43,8 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 ### Links
 
-- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/projects/9-url-shortening-api)
+- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/9-url-shortening-api)
 - Live Site URL: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/9-url-shortening-api/)
-
-<br>
 
 ## 💡 My process
 
@@ -164,8 +152,6 @@ window.onunload = () => {
 };
 ```
 
-<br>
-
 ## 🔎 Useful resources
 
 #### 💟 CSS Image Colour:
@@ -189,8 +175,6 @@ window.onunload = () => {
 #### 🧩 Other
 
 - [How TO - Trigger Button Click on Enter](https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp)
-
-<br>
 
 ## ⭐ Author
 
