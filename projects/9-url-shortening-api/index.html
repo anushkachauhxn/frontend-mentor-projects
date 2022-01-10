@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Shortly | URL Shortening API Landing Page</title>
+        <meta name="description" content="Shortly URL shortening API Landing Page | Frontend Mentor">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="#"><img src="./assets/logo.svg" alt=""></a>
+            </div>
+            <div class="menu">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav class="">      <!-- 'active' class added and removed by JS [Mobile View] -->
+                <ul class="nav-links">
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Resources</a></li>
+                </ul>
+                <ul class="nav-buttons">
+                    <li><a href="">Login</a></li>
+                    <li><a class="cta-btn" href="">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section1">
+                <div class="content">
+                    <h1>More than just shorter links</h1>
+                    <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                    <a class="cta-btn" href="">Get Started</a>
+                </div>
+
+                <div class="hero-component">
+                    <form class="">         <!-- 'form-error' class added and removed by JS -->
+                        <input type="text" placeholder="Shorten a link here...">
+                        <button class="cta-btn" type="submit">
+                            <i class="fa fa-circle-o-notch fa-spin"></i>
+                            Shorten It!
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="section2">
+                <div class="hero-component-results">
+                <!-- Results (dynamically added)
+                    <div class="result">
+                        <p class="long-link">frontendmentor.io</p>
+                        <div>
+                            <p class="short-link"></p>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <p class="long-link">twitter.com/frontendmentor</p>
+                        <div>
+                            <p class="short-link"></p>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <p class="long-link">linkedin.com/company/frontend-mentor</p>
+                        <div>
+                            <p class="short-link"></p>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                    </div>
+                -->
+                </div>
+
+                <h2>Advanced Statistics</h2>
+                <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="icon"><img src="./assets/icon-brand-recognition.svg" alt=""></div>
+                        <h3>Brand Recognition</h3>
+                        <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon"><img src="./assets/icon-detailed-records.svg" alt=""></div>
+                        <h3>Detailed Records</h3>
+                        <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                    </div>
+                    <div class="card">
+                        <div class="icon"><img src="./assets/icon-fully-customizable.svg" alt=""></div>
+                        <h3>Fully Customizable</h3>
+                        <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section3">
+                <h2>Boost your links today</h2>
+                <a class="cta-btn" href="">Get Started</a>
+            </section>
+        </main>
+
+        <footer>
+            <div class="logo">
+                <a href="#"><img src="./assets/logo.svg" alt=""></a>
+            </div>
+            <div class="lists">
+                <ul>
+                    <li>Features</li>
+                    <li><a href="">Link Shortening</a></li>
+                    <li><a href="">Branded Links</a></li>
+                    <li><a href="">Analytics</a></li>
+                </ul>
+
+                <ul>
+                    <li>Resources</li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Developers</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+
+                <ul>
+                    <li>Company</li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Our Team</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <a href=""><i class="fa fa-facebook-official"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-pinterest"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+        </footer>
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>
