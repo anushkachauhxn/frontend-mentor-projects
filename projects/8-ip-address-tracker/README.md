@@ -37,7 +37,7 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/projects/8-ip-address-tracker)
+- Solution URL: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/8-ip-address-tracker)
 - Live Site URL: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/8-ip-address-tracker/)
 
 ## 💡 My process
