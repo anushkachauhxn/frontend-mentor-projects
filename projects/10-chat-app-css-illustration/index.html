@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chat App | CSS Illustration</title>
+        <meta name="description" content="Chat App CSS Illustration | Frontend Mentor">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+            <section class="illustration">
+                <div class="app-bg">
+                    <div class="profile">
+                        <ion-icon name="chevron-back"></ion-icon>
+                        <img src="./assets/avatar.jpg" alt="">
+                        <div>
+                            <h2>Samuel Green</h2>
+                            <h3>Available to Walk</h3>
+                        </div>
+                        <ion-icon name="ellipsis-vertical"></ion-icon>
+                    </div>
+
+                    <div class="chat-messages">
+                        <div class="incoming">
+                            <div class="chat-msg text-msg">
+                                <p>That sounds great. I'd be happy with that.</p>
+                            </div>
+                            <div class="chat-msg text-msg">
+                                <p>Could you send over some pictures of your dog, please?</p>
+                            </div>
+                        </div>
+
+                        <div class="outgoing">
+                            <div class="chat-msg img-msg">
+                                <img src="./assets/dog-image-1.jpg" alt="">
+                                <img src="./assets/dog-image-2.jpg" alt="">
+                                <img src="./assets/dog-image-3.jpg" alt="">
+                            </div>
+                            <div class="chat-msg text-msg">
+                                <p>Here are a few pictures. She's a happy girl!</p>
+                            </div>
+                            <div class="chat-msg text-msg">
+                                <p>Can you make it?</p>
+                            </div>
+                        </div>
+
+                        <div class="incoming">
+                            <div class="chat-msg text-msg">
+                                <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+                            </div>
+                            <div class="chat-msg price-msg">
+                                <input type="radio" name="price" value="$29">
+                                <span class="check"></span>
+                                <p>30 minute walk</p>
+                                <h4>$29</h4>
+                            </div>
+                            <div class="chat-msg price-msg">
+                                <input type="radio" name="price" value="$49">
+                                <span class="check"></span>
+                                <p>1 hour walk</p>
+                                <h4>$49</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chatbox">
+                        <input type="text" placeholder="Type a message…" disabled>
+                        <button disabled>
+                            <ion-icon name="chevron-forward"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="text">
+                <h1>Simple booking</h1>
+                <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+            </section>
+        </main>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
