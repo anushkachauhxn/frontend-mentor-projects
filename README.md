@@ -118,6 +118,17 @@ These are my solutions to the challenges I've completed on [Frontend Mentor](htt
 
 <br><br>
 
+### 11. Launch Countdown Timer
+
+- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/11-launch-countdown-timer)
+- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/11-launch-countdown-timer/)
+
+<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/11-launch-countdown-timer">
+  <img width="750px" src="./projects/11-launch-countdown-timer/assets/screenshot.png">
+</a>
+
+<br><br>
+
 ## ⭐ Author
 
 - <img align="left" width="28px" src="https://img.icons8.com/fluency/48/000000/github.png"/> 

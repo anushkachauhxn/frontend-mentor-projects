@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+:root {
+  /* Primary */
+  --grayish-blue: hsl(237, 18%, 59%);
+  --soft-red: hsl(345, 95%, 68%);
+  --soft-darker-red: hsl(345, 64%, 59%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --dark-desaturated-blue: hsl(236, 21%, 26%);
+  --very-dark-blue: hsl(235, 16%, 14%);
+  --very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+  --very-dark-violet: hsl(266, 19%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--very-dark-violet);
+  background-image: url("./assets/pattern-hills.svg"),
+    url("./assets/bg-stars.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, 100%;
+  background-position: bottom, top;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----- HEADER ----- */
+header {
+  position: absolute;
+  top: 140px;
+}
+header h1 {
+  color: var(--white);
+  font-size: 22px;
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+}
+
+/* ----- FOOTER ----- */
+footer {
+  position: absolute;
+  bottom: 72px;
+  display: flex;
+  column-gap: 32px;
+}
+footer ion-icon {
+  color: var(--grayish-blue);
+  font-size: 30px;
+  transition: color 0.25s;
+  cursor: pointer;
+}
+footer ion-icon:hover {
+  color: var(--soft-red);
+}
+
+/* ----- MAIN ----- */
+main {
+  margin-bottom: 45px;
+  display: flex;
+  column-gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+main section h2 {
+  margin-top: 21px;
+  color: var(--grayish-blue);
+  font-size: 14px;
+  letter-spacing: 6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* CARDS */
+main section .card-container {
+  width: 148px;
+  height: 140px;
+  border-radius: 8px;
+  background: var(--dark-desaturated-blue);
+  box-shadow: 0 9px 0px var(--very-dark-mostly-black-blue);
+
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.card-text {
+  color: var(--soft-red);
+  font-size: 80px;
+  letter-spacing: -2px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-top {
+  color: var(--soft-darker-red);
+
+  padding-top: calc(50% - 3.5px);
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid hsla(235, 18%, 12%, 0.25);
+  box-shadow: inset 6px 6px 360px hsla(235, 18%, 12%, 0.25);
+}
+.card-bottom {
+  padding-bottom: calc(50% - 3.25px);
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid hsla(235, 18%, 12%, 0.25);
+}
+
+/* Cards at the top and bottom halves */
+.card1,
+.card3 {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+}
+.card1 {
+  top: 0;
+  left: 0;
+}
+.card3 {
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Card in middle that flips */
+.scene {
+  width: 100%;
+  height: 50%;
+  perspective: 600px;
+}
+
+.card2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  transform-origin: bottom;
+}
+
+.card-face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--dark-desaturated-blue);
+
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+/* Flipping Tranformation */
+.card-face-back {
+  transform: rotateX(-180deg);
+}
+.card2.is-flipped {
+  transform: rotateX(-180deg);
+}
+
+/* Notches on the sides */
+main section .card-container::before,
+main section .card-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 6px;
+  height: 12px;
+  background: var(--very-dark-mostly-black-blue);
+  z-index: 100;
+}
+main section .card-container::before {
+  left: 0;
+  border-radius: 0 6px 6px 0;
+}
+main section .card-container::after {
+  right: 0.25px;
+  border-radius: 6px 0 0 6px;
+}
+
+/* --------------- Responsiveness - MOBILE VIEW --------------- */
+@media (max-width: 376px) {
+  body {
+    background-size: 400%, 400%;
+    background-position: bottom right, top center;
+  }
+  /* ----- HEADER ----- */
+  header {
+    position: absolute;
+    top: 146px;
+  }
+  header h1 {
+    font-size: 18px;
+    letter-spacing: 6.5px;
+    padding: 0 50px;
+    text-align: center;
+  }
+  /* ----- FOOTER ----- */
+  footer {
+    bottom: 48px;
+  }
+  footer ion-icon {
+    font-size: 24px;
+  }
+  /* ----- MAIN ----- */
+  main {
+    column-gap: 16px;
+  }
+  main section h2 {
+    margin-top: 10px;
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+  /* CARDS */
+  main section .card-container {
+    width: 70px;
+    height: 66px;
+    border-radius: 4px;
+    box-shadow: 0 5px 0px var(--very-dark-mostly-black-blue);
+  }
+  .card-text {
+    font-size: 36px;
+    letter-spacing: -2px;
+  }
+  .card-top {
+    padding-top: calc(50% - 2.25px);
+    border-radius: 4px 4px 0 0;
+  }
+  .card-bottom {
+    padding-bottom: calc(50% - 2px);
+    border-radius: 0 0 4px 4px;
+  }
+  /* Notches on the sides */
+  main section .card-container::before,
+  main section .card-container::after {
+    width: 3px;
+    height: 6px;
+  }
+  main section .card-container::before {
+    left: 0.25px;
+    border-radius: 0 3px 3px 0;
+  }
+  main section .card-container::after {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+}
