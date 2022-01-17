@@ -140,6 +140,17 @@ These are my solutions to the challenges I've completed on [Frontend Mentor](htt
 
 <br><br>
 
+### 13. Room Homepage
+
+- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/13-room-homepage)
+- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/13-room-homepage/)
+
+<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/13-room-homepage">
+  <img width="750px" src="./projects/13-room-homepage/assets/screenshot.png">
+</a>
+
+<br><br>
+
 ## ⭐ Author
 
 - <img align="left" width="28px" src="https://img.icons8.com/fluency/48/000000/github.png"/> 
