@@ -151,6 +151,17 @@ These are my solutions to the challenges I've completed on [Frontend Mentor](htt
 
 <br><br>
 
+### 14. E-commerce Product Page
+
+- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/14-ecommerce-product-page)
+- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/frontend-mentor-projects/projects/14-ecommerce-product-page/)
+
+<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/14-ecommerce-product-page">
+  <img width="750px" src="./projects/14-ecommerce-product-page/assets/screenshot.png">
+</a>
+
+<br><br>
+
 ## ⭐ Author
 
 - <img align="left" width="28px" src="https://img.icons8.com/fluency/48/000000/github.png"/> 

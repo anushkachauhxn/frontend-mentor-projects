@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>E-commerce Product Page</title>
+        <meta name="description" content="E-commerce Product Page | Frontend Mentor">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <img class="mobile-menu menu-btn" src="./assets/icon-menu.svg" alt="">
+                <img class="logo" src="./assets/logo.svg" alt="">
+                <ul>
+                    <button class="mobile-menu close-btn"><ion-icon name="close"></ion-icon></button>
+                    <li><a href="">Collections</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <a class="cart-icon" href="">
+                    <span class="empty">0</span>
+                    <ion-icon name="cart-outline"></ion-icon>
+                </a>
+                <a href="">
+                    <img class="avatar" src="./assets/image-avatar.png" alt="">
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="product-images">
+                <div class="display-img">
+                    <img src="./assets/image-product-1.jpg" alt="">
+
+                    <button class="mobile-btns prev-btn"><ion-icon name="chevron-back"></ion-icon></button>
+                    <button class="mobile-btns next-btn"><ion-icon name="chevron-forward"></ion-icon></button>
+                </div>
+                <div class="thumbnail-img">
+                    <div class="active"><img src="./assets/image-product-1-thumbnail.jpg" alt=""></div>
+                    <div><img src="./assets/image-product-2-thumbnail.jpg" alt=""></div>
+                    <div><img src="./assets/image-product-3-thumbnail.jpg" alt=""></div>
+                    <div><img src="./assets/image-product-4-thumbnail.jpg" alt=""></div>
+                </div>
+            </section>
+
+            <section class="product-details">
+                <h2>Sneaker Company</h2>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+
+                <div class="price">
+                    <h3>$125.00<span>50%</span></h3>
+                    <h4>$250.00</h4>
+                </div>
+
+                <div class="add-items">
+                    <div class="numeric-box">
+                        <button class="minus"><img src="./assets/icon-minus.svg" alt=""></button>
+                        <input type="text" value="0" disabled />
+                        <button class="plus"><img src="./assets/icon-plus.svg" alt=""></button>
+                    </div>
+                    <button class="add-button">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        Add to cart
+                    </button>
+                </div>
+            </section>
+
+            <article class="empty cart-details">
+                <h2>Cart</h2>
+                <div class="purchase-details">
+                    <img src="./assets/image-product-1-thumbnail.jpg" alt="">
+                    <div>
+                        <p>Fall Limited Edition Sneakers</p>
+                        <p class="purchase-price">$125.00 x 3 <span>$375.00</span></p>
+                    </div>
+                    <button class="delete-btn"><ion-icon name="trash"></ion-icon></button>
+                </div>
+                <button class="checkout-btn">Checkout</button>
+                <div class="empty-details">Your cart is empty.</div>
+            </article>
+
+            <article class="lightbox">
+                <div class="display-img">
+                    <img src="./assets/image-product-1.jpg" alt="">
+
+                    <button class="close-btn"><ion-icon name="close"></ion-icon></button>
+                    <button class="prev-btn"><ion-icon name="chevron-back"></ion-icon></button>
+                    <button class="next-btn"><ion-icon name="chevron-forward"></ion-icon></button>
+                </div>
+                <div class="thumbnail-img">
+                    <div class="active"><img src="./assets/image-product-1-thumbnail.jpg" alt=""></div>
+                    <div><img src="./assets/image-product-2-thumbnail.jpg" alt=""></div>
+                    <div><img src="./assets/image-product-3-thumbnail.jpg" alt=""></div>
+                    <div><img src="./assets/image-product-4-thumbnail.jpg" alt=""></div>   
+                </div>
+            </article>
+        </main>
+
+        <!-- Ionicons Usage -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- JS File -->
+        <script src="script.js" async defer></script>
+    </body>
+</html>
