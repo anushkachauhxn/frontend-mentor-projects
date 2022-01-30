@@ -173,6 +173,17 @@ These are my solutions to the challenges I've completed on [Frontend Mentor](htt
 
 <br><br>
 
+### 16. Rock Paper Scissors Lizard Spock
+
+- 📝 GitHub Repository: [Link](https://github.com/anushkachauhxn/fm-rock-paper-scissors-lizard-spock)
+- 🕸️ Live Site: [Link](https://anushkachauhxn.github.io/fm-rock-paper-scissors-lizard-spock/)
+
+<a href="https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/16-rock-paper-scissors-lizard-spock">
+  <img width="750px" src="./projects/16-rock-paper-scissors-lizard-spock/assets/screenshot.png">
+</a>
+
+<br><br>
+
 ## ⭐ Author
 
 - <img align="left" width="28px" src="https://img.icons8.com/fluency/48/000000/github.png"/> 
